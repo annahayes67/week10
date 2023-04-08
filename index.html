@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    </head>
+    <body class="container">
+        <br>
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                   <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-start-date">start date</label>
+                   <input type="date" class="form-control" id="new-start-date">
+                    </div>
+                   </div> 
+                   <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-end-date">end date</label>
+                   <input type="date" class="form-control" id="new-end-date">
+                    </div>
+                   </div> 
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                        <label for="new-task">task</label>
+                       <input type="text" class="form-control" id="new-task" placeholder="task">
+                        </div>
+                    </div>
+                    <button id="add" class="btn btn-primary form-control">create</button>
+                </div>
+            </div>
+        </div>
+
+        <table id="list" class="table table-dark table-striped">
+            <tr>
+                <th>task</th>
+                <th>date created</th>  
+                <th>start date</th>
+                <th>due date</th>
+                <th>actions</th>
+            </tr>
+        </table>
+
+
+      
+        
+       
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
